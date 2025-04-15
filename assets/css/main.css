@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+@import 'primeicons/primeicons.css';
+
+:root {
+  --p-primary: #ca2628;
+  --p-primary-600: #ae1d20;
+}
