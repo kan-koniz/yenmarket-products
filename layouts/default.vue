@@ -55,7 +55,7 @@ const menu = computed(() => {
   <div>
     <header class="bg-white sticky top-0 z-50">
       <div class="lg:px-20 py-2 flex items-center justify-between">
-        <NuxtImg src="/images/logo.png" />
+        <NuxtLink to="/"><NuxtImg src="/images/logo.png" /></NuxtLink>
 
         <SearchInput />
 

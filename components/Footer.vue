@@ -58,7 +58,7 @@
         </div>
         <div>
           <NuxtImg
-            src="http://bizweb.dktcdn.net/100/382/166/themes/900578/assets/logo_bct.png"
+            src="/images/certificate.png"
             alt="Đã thông báo Bộ Công Thương"
             loading="lazy"
             format="webp"
@@ -70,7 +70,7 @@
       <div class="flex flex-col items-center">
         <NuxtLink to="https://yenmarket.vn/he-thong-cua-hang" target="_blank">
           <NuxtImg
-            src="http://bizweb.dktcdn.net/100/382/166/themes/900578/assets/mew_store.png"
+            src="/images/store.png"
             alt="Hệ thống cửa hàng"
             class="w-56 h-56 object-contain mb-2"
             loading="lazy"

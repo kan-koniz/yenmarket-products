@@ -50,7 +50,7 @@ const { result: frozenMeat } = useProducts(ref({ category: 'frozen-meat' }));
       <div class="flex items-center justify-between gap-4">
         <div>
           <NuxtImg
-            src="http://bizweb.dktcdn.net/100/382/166/themes/900578/assets/banner3_1.jpg?1724210132257"
+            src="/images/banner_1.png"
             alt="Benefit 1"
             loading="lazy"
             format="webp"
@@ -60,7 +60,7 @@ const { result: frozenMeat } = useProducts(ref({ category: 'frozen-meat' }));
 
         <div>
           <NuxtImg
-            src="http://bizweb.dktcdn.net/100/382/166/themes/900578/assets/banner3_2.jpg?1724210132257"
+            src="/images/banner_2.png"
             alt="Benefit 2"
             loading="lazy"
             format="webp"
@@ -70,7 +70,7 @@ const { result: frozenMeat } = useProducts(ref({ category: 'frozen-meat' }));
 
         <div>
           <NuxtImg
-            src="http://bizweb.dktcdn.net/100/382/166/themes/900578/assets/banner3_3.jpg?1724210132257"
+            src="/images/banner_3.png"
             alt="Benefit 3"
             loading="lazy"
             format="webp"
@@ -91,12 +91,18 @@ const { result: frozenMeat } = useProducts(ref({ category: 'frozen-meat' }));
     <div class="px-20">
       <div v-if="fishAndSeafood?.data.length">
         <h2 class="text-2xl font-bold mb-4">Fish and Seafood</h2>
-        <ProductList :products="fishAndSeafood.data" />
+        <ProductList
+          :products="fishAndSeafood.data"
+          path="/our-products/fresh-food/fish-and-seafood"
+        />
       </div>
 
       <div v-if="frozenMeat?.data.length" class="mt-6">
         <h2 class="text-2xl font-bold mb-4">Frozen Meat</h2>
-        <ProductList :products="frozenMeat.data" />
+        <ProductList
+          :products="frozenMeat.data"
+          path="/our-products/fresh-food/frozen-meat"
+        />
       </div>
     </div>
 
