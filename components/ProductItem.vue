@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="border border-gray-200 px-4 py-2 rounded-sm">
+  <div class="border border-gray-200 px-4 py-2 rounded-sm cursor-pointer">
     <div class="h-60 overflow-hidden">
       <NuxtImg
         :src="product.image"

@@ -95,6 +95,18 @@ const { result: frozenMeat } = useProducts(ref({ category: 'frozen-meat' }));
           :products="fishAndSeafood.data"
           path="/our-products/fresh-food/fish-and-seafood"
         />
+        <div class="mt-4 flex items-center justify-between gap-4">
+          <hr class="flex-grow border-t border-gray-300" />
+          <div class="w-24">
+            <button
+              class="bg-red-700 text-white px-6 py-2 cursor-pointer whitespace-nowrap rounded-4xl hover:bg-red-800 transition duration-300 ease-in-out"
+              @click="$router.push('/our-products/fresh-food/fish-and-seafood')"
+            >
+              See all
+            </button>
+          </div>
+          <hr class="flex-grow border-t border-gray-300" />
+        </div>
       </div>
 
       <div v-if="frozenMeat?.data.length" class="mt-6">
@@ -103,6 +115,19 @@ const { result: frozenMeat } = useProducts(ref({ category: 'frozen-meat' }));
           :products="frozenMeat.data"
           path="/our-products/fresh-food/frozen-meat"
         />
+
+        <div class="mt-4 flex items-center justify-between gap-4">
+          <hr class="flex-grow border-t border-gray-300" />
+          <div class="w-24">
+            <button
+              class="bg-red-700 text-white px-6 py-2 cursor-pointer whitespace-nowrap rounded-4xl hover:bg-red-800 transition duration-300 ease-in-out"
+              @click="$router.push('/our-products/fresh-food/frozen-meat')"
+            >
+              See all
+            </button>
+          </div>
+          <hr class="flex-grow border-t border-gray-300" />
+        </div>
       </div>
     </div>
 

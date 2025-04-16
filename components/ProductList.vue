@@ -4,6 +4,10 @@ defineProps({
     type: Array as () => IProduct[],
     required: true,
   },
+  path: {
+    type: String,
+    default: '',
+  },
 });
 </script>
 
@@ -15,6 +19,7 @@ defineProps({
       v-for="product in products"
       :key="product.id"
       :product="product"
+      @click="() => $router.push(`${path}/${product.slug}`)"
     />
   </div>
 </template>
